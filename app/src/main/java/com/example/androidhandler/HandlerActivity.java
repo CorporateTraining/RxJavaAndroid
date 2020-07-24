@@ -31,8 +31,8 @@ public class HandlerActivity extends AppCompatActivity {
         buttonOnClick(message_two_button, MESSAGE_INFO_2, MESSAGE_2);
     }
 
-    private void buttonOnClick(Button message_one_button, final String messageInfo, final int messageWhat) {
-        message_one_button.setOnClickListener(new View.OnClickListener() {
+    private void buttonOnClick(Button messageOneButton, final String messageInfo, final int messageWhat) {
+        messageOneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Map<String, Object> mapMessage = new HashMap<>();
