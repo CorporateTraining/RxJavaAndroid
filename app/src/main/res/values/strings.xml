@@ -2,4 +2,7 @@
     <string name="app_name">AndroidHandler</string>
     <string name="rx_activity">RxActivity</string>
     <string name="start">启动</string>
+    <string name="sp_activity">SPActivity</string>
+    <string name="submit">提交</string>
+    <string name="hint">请输入信息</string>
 </resources>
