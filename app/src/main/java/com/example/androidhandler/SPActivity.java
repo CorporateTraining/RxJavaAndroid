@@ -23,16 +23,16 @@ public class SPActivity extends AppCompatActivity {
         spContent = findViewById(R.id.sp_content);
         sharedPreferences = getApplicationContext().getSharedPreferences(DATA, MODE_PRIVATE);
 
-        saveSharedPreferences();
-        onClickSubmitButton();
+        getContentFromSharedPreferences();
+        saveContentToSharedPreferences();
     }
 
-    private void saveSharedPreferences() {
+    private void getContentFromSharedPreferences() {
         String content = sharedPreferences.getString(CONTENT, "");
         spContent.setText(content);
     }
 
-    private void onClickSubmitButton() {
+    private void saveContentToSharedPreferences() {
         spSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
